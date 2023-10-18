@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Balthazar', serif;
+}
+:root{
+    --bg-color:#a4133c;
+    --main-color: #ff758f;
+    --second-bg-color: #ff4d6d;
+    --text-color:#ffccd5;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+}
+body{
+    background-color:var(--bg-color) ;
+    color: var(--text-color);
+}
+#header{
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-color:transparent;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:100;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+.logo{
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+header #navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: var(--text-color);
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-left: 1.5rem;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 95 2rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+    background: url(images/png-1342120_640.png) no-repeat;
+    background-size: 100vh 65vh;
+    background-position: right;
+}
+.home-content{
+    max-width: 60rem;
+    z-index: 99;
+}
+.home-content h1{
+    position: relative;
+    display: block;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.home-content span{
+    position: relative;
+    display: block;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.home-content p{
+    position: relative;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+.home-content button{
+    position: relative;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 3rem 20rem;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
